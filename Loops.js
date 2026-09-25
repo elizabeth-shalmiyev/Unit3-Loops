@@ -11,14 +11,14 @@
 // Return an array of every integer from start to end, inclusive.
 // Use a for loop and .push() to build the array one number at a time.
  // TODO: your code here
-let start=0;
-let end=10;
+
 function getNumbersInRange(start, end) {
-  const numbers=["1", "2", "3", "4", "5", "6", "7"];
+  const result=[];
 for(let i=start; i<=end; i++){
-return (numbers.push("8")
+result.push(i);
 }
-}
+return result
+} 
 
 console.log(getNumbersInRange(1, 5));  // [1, 2, 3, 4, 5]
 console.log(getNumbersInRange(10, 10)); // [10]
@@ -30,7 +30,11 @@ console.log(getNumbersInRange(3, 8));  // [3, 4, 5, 6, 7, 8]
 // Use the accumulator pattern: let total = 0; total += i; each pass.
 function sumRange(start, end) {
   // TODO: your code here
-
+const answer=[];
+for(let i=start; i<=end; total+= i++){
+  
+}
+return total
 }
 
 console.log(sumRange(1, 5));   // 15
