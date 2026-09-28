@@ -30,11 +30,11 @@ console.log(getNumbersInRange(3, 8));  // [3, 4, 5, 6, 7, 8]
 // Use the accumulator pattern: let total = 0; total += i; each pass.
 function sumRange(start, end) {
   // TODO: your code here
-const answer=[];
-for(let i=start; i<=end; total+= i++){
-  
+let total=0;
+for(let i=start; i<=end; total += i++){
+
 }
-return total
+return total;
 }
 
 console.log(sumRange(1, 5));   // 15
