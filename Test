@@ -1,0 +1,32 @@
+
+function badLifeChoices(q, machineone, machinetwo, machinethree){
+    let n=0;
+    while(q>=1){
+        (n+1); 
+        (q-1);
+        if(machineone % 35 === 0){
+            q + 30; 
+            machineone++;
+        } else if(q === 0){
+            break;
+        } else{
+            n+1;
+            q-1;
+ if (machinetwo % 100 === 0){
+    q+60;
+    machinetwo++;
+ } else {
+    n+1;
+    q-1;
+    if(machinethree % 10 === 0){
+        q+9;
+        machinethree++;
+    } else {
+    return ("Martha plays ${`n`} times before going broke.")
+    }
+ }
+        }
+           
+    }
+}
+console.log(badLifeChoices(48,3,10,4));
