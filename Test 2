@@ -1,0 +1,22 @@
+function choice(q, machineone, machinetwo, machinethree) {
+  let curr = 1;
+  let n = 0;
+
+  while (q >= 1) {
+    n++;
+    q--;
+    if (machineone % 35 === 0) {
+      q + 30;
+      machineone++;
+    } else if (q === 0) {
+      break;
+    } else if (machinetwo % 100 === 0) {
+      q + 60;
+    } else if (machinethree % 10 === 0) {
+      q + 9;
+    } else {
+      return `Martha plays ${n} times before going broke.`;
+    }
+  }
+}
+console.log(choice(48, 3, 10, 4));
